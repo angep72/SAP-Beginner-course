@@ -1,0 +1,9 @@
+<!-- this where text control is found -->
+<!-- We define an additional sap.ui.core.mvc namespace with alias mvc, where the SAPUI5 views and all other Model-View-Controller (MVC) assets are located -->
+<mvc:View
+controllerName="ui5.walkthrough.controller.App"
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc">
+<Button text="press me "
+press=" .onShowHello()"/>
+</mvc:View>

@@ -1,4 +1,9 @@
-sap.ui.define([],function (){
-	"use strict"
-	alert ("you took all my evening")
+
+sap.ui.define([
+	"sap/ui/core/mvc/XMLView"
+],(XMLView)=>{
+"use strict"
+XMLView.create({
+	viewName:"ui5.walkthrough.view.App"
+}).then((oView)=>oView.placeAt("content"))
 })
