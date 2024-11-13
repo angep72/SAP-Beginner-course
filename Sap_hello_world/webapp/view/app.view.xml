@@ -4,6 +4,12 @@
 controllerName="ui5.walkthrough.controller.App"
 xmlns="sap.m"
 xmlns:mvc="sap.ui.core.mvc">
-<Button text="press me "
+<Button text="{i18n>showHelloButtonText}"
 press=" .onShowHello()"/>
+<!-- the input field using json model step 7-->
+<Input
+value="{/recipient/name}"
+valueLiveUpdate="true"
+description="Hello {/recipient/name}"
+/>
 </mvc:View>
