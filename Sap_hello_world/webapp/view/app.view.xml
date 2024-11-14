@@ -1,15 +1,20 @@
-<!-- this where text control is found -->
-<!-- We define an additional sap.ui.core.mvc namespace with alias mvc, where the SAPUI5 views and all other Model-View-Controller (MVC) assets are located -->
 <mvc:View
-controllerName="ui5.walkthrough.controller.App"
-xmlns="sap.m"
-xmlns:mvc="sap.ui.core.mvc">
-<Button text="{i18n>showHelloButtonText}"
-press=" .onShowHello()"/>
-<!-- the input field using json model step 7-->
-<Input
-value="{/recipient/name}"
-valueLiveUpdate="true"
-description="Hello {/recipient/name}"
-/>
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+>
+	<Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<mvc:XMLView
+							viewName="ui5.walkthrough.view.HelloPanel"
+						/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>

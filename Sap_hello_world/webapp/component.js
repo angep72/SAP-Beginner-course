@@ -9,7 +9,7 @@ sap.ui.define([
       metadata : {
          "interfaces": ["sap.ui.core.IAsyncContentCreation"],
          "rootView": {
-            "viewName": "ui5.walkthrough.view.App",
+            "viewName": "ui5.walk through.view.App",
             "type": "XML",
             "id": "app"
          }
